@@ -48,7 +48,7 @@ skew(x) # 0.3161183
 
 data <- read.csv("gapminder-FiveYearData.csv", stringsAsFactors=FALSE) # load data
 data.1982 <- data[data$year==1982,]  # subset to year 1982
-plot(lifeExp ~gdpPercap, data.1982, log="x")  
+plot(lifeExp ~gdpPercap, data.1982, log="x")
 plot(data.1982$gdpPercap,data.1982$lifeExp, log="x")
 
 tmp <- sqrt(data.1982$pop)
@@ -152,7 +152,7 @@ ddply(data, ~continent*year, get.n.countries)
 Exercise 2: write a function that takes a dataframe as input and returns the sum of the total population (variable "pop") then apply to data splitting by year and continent
 
 get.total.pop <- function(x) {
-  sum(x$pop)      
+  sum(x$pop)
 }
 
 get.total.pop(data) # total number of sampled individuals in data: 50440465802
@@ -183,7 +183,7 @@ max.gdp <- ddply(data,  .(continent, year), function(x) data.frame(gdp.max=max(x
 
 
 max.gdp <- ddply(data,  .(continent, year), function(x) data.frame(gdp.max=max(x$gdpPercap), gdp.min=min(x$gdpPercap)) )
-  
+
 
 Plyr functions:
   http://nicercode.github.io/2014-02-13-UNSW/lessons/40-repeating/full_apply_suite.png
@@ -274,7 +274,7 @@ R search engine:
 
 Search the internal help:
   help.search("summary")
-  
+
 Stack overflow R help section:
   http://stackoverflow.com/questions/tagged/r
 e.g., linear models in R
@@ -309,7 +309,7 @@ expect_that(is.nan(variance(1)),
 x.with.nas <- runif(10)
 x.with.nas[c(2, 6, 8)] <- NA
 x.without.nas <- na.omit(x.with.nas)
-expect_that(variance(x.with.nas), 
+expect_that(variance(x.with.nas),
             equals(variance(x.without.nas)))
 
 # END OF THE test-variance.R file
@@ -334,5 +334,15 @@ test_file("test-variance.R")
 test the 'average' function.  Test it against R's mean function, and as many tricky cases as you can think of.
 Think in particular about how the 'average' function should deal with missing values.  It probably should do the same thing as the 'variance' function, which will require you to modify the function a little.
 
+
+# Links from the chat window
+
+11:44 Pascal: some people might find this helpful. i did. http://yangfeng.wordpress.com/2010/05/19/abbreviations-of-r-commands/
+11:44 Pascal: common abbreviations for R commands
+14:45 Aaron: for the person who was squinting to count whether the populations were millions or billions:
+14:46 Aaron: prettyNum(x, big.mark=",") will group 000's with commas
+15:09 Pascal: choosing your beer using R : http://blog.yhathq.com/posts/recommender-system-in-r.html
+16:25 Tim: dummy data used in tests are known as "test fixtures"
+17:04 Tim: Apart from writing unit tests for each function, putting in integration tests in your main analysis code is also useful - these check that all your functions are working together as expected to produce known-good results from smaller subsets of your data.
 
 
