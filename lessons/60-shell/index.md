@@ -334,7 +334,7 @@ head <filename>
 
 you can also fully examine files with the `less` command. Keeps the content from scrolling of the screen. You can also use the arrow keys to navigate up or down. Press enter or return to keep scrolling down and the `q` key to quit.
 
-**Quick exercise 01**
+## Exercise 01
 
 Change into your home directory;
 Then go to Desktop and then to the shell material folder;
@@ -424,7 +424,7 @@ $ ls 3901.txt 7901.txt 9901.txt
 ```
 are exactly identical. The `ls` command cannot tell the difference between these two things.
 
-## Short exercise 01
+## Exercise 02
 
 Got to your home directory: `cd`
 Do each of the following using a single ls command without navigating to a different directory;
@@ -581,7 +581,7 @@ e.g.
 which git
 ```
 
-## Short exercise 2
+## Exercise 03
 
 Go to your shell material directory;
 Move all files in directory `data` to a subdirectory `data/exercise`;
