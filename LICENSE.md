@@ -1,5 +1,9 @@
-Licenses
-========
+---
+layout: lesson
+root: .
+title: Licence
+tutor: Greg Wilson
+---
 
 Instructional Material
 ----------------------
