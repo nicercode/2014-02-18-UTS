@@ -251,7 +251,7 @@ to.dev(myplot(data.1982, "gdpPercap","lifeExp", main=1982), png, "output/1982.pn
 
 Another approach for making reproducible outputs is to combine plots, tables, code and a description of content in a single document.
 
-The classical ([sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/)) has been progressively replaced by an R package called `knitr`, which uses a language called [Markdown][id1]. `knitr` can be used for many nice features, from [reports][id2] to full [presentations][id3]. It can be coded in a specific language called [R markdown][id4]. For example, this [report][id2] that we provided to you derived from this [Rmd][id5] file.
+An R package `knitr` has been developed, which uses a language called [Markdown][id1]. `knitr` can be used for many nice features, from [reports][id2] to full [presentations][id3]. It can be coded in a specific language called [R markdown][id4]. For example, this [report][id2] that we provided to you derived from the Rmd file contained in the project in this [zip file][id5].
 You can find out more about how `knitr` works ([here](http://yihui.name/knitr/)) and ([here](https://www.rstudio.com/ide/docs/authoring/overview)).
 
 ## An ideal paper
@@ -302,4 +302,4 @@ This material presented here was adapted from swc by Daniel Falster, incorporati
 [id2]: http://nicercode.github.io/2014-02-13-UNSW/lessons/90-reproducible/knitr "UNSW/UTS example of html knitr report"
 [id3]: http://rpubs.com/recology_/rresources "Scott Chamberlain online presentation"
 [id4]: http://www.rstudio.com/ide/docs/authoring/using_markdown "RStudio material for R Markdown"
-[id5]: https://github.com/nicercode/2014-02-13-UNSW/blob/gh-pages/lessons/90-reproducible/knitr.Rmd "UNSW/UTS example of original Rmd file used to generate knitr reports"
+[id5]: https://raw.github.com/nicercode/2014-02-13-UNSW/blob/gh-pages/lessons/90-reproducible.zip "UNSW/UTS example of original Rmd file used to generate knitr reports"
