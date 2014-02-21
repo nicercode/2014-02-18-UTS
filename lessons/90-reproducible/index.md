@@ -302,4 +302,4 @@ This material presented here was adapted from swc by Daniel Falster, incorporati
 [id2]: http://nicercode.github.io/2014-02-13-UNSW/lessons/90-reproducible/knitr "UNSW/UTS example of html knitr report"
 [id3]: http://rpubs.com/recology_/rresources "Scott Chamberlain online presentation"
 [id4]: http://www.rstudio.com/ide/docs/authoring/using_markdown "RStudio material for R Markdown"
-[id5]: https://raw.github.com/nicercode/2014-02-13-UNSW/blob/gh-pages/lessons/90-reproducible.zip "UNSW/UTS example of original Rmd file used to generate knitr reports"
+[id5]: https://raw.github.com/nicercode/2014-02-18-UTS/gh-pages/lessons/90-reproducible.zip "UNSW/UTS example of original Rmd file used to generate knitr reports"
